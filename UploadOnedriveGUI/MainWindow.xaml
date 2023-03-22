@@ -1,0 +1,23 @@
+﻿<Window x:Class="UploadOnedriveGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UploadOnedriveGUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Background="Azure">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="CallGraphButton" Content="Login" HorizontalAlignment="Right" Padding="5" Click="CallGraphButton_Click" Margin="5" FontFamily="Segoe Ui"/>
+                <Button x:Name="SignOutButton" Content="Sign-Out" HorizontalAlignment="Right" Padding="5" Click="SignOutButton_Click" Margin="5" Visibility="Collapsed" FontFamily="Segoe Ui"/>
+            </StackPanel>
+            <Label x:Name="LoginLabel" Content="Login as: " HorizontalAlignment="Left" Padding="0" Margin="10" FontFamily="Segoe Ui"/>
+            <Button x:Name="ChooseFileButton" Content="Choose file" Click="ChooseFileButton_Click" Margin="10"/>
+            <Label x:Name="FileNameLabel" Content="File name: " Margin="10"/>
+            <Button x:Name="UploadButton" Content="Upload" Click="UploadButton_Click" Margin="10"/>
+            <ProgressBar x:Name = "progressBar" Value = "0"  Margin = "10" Maximum = "100"  
+                  Height = "20" IsIndeterminate = "False" />
+        </StackPanel>
+    </Grid>
+</Window>
