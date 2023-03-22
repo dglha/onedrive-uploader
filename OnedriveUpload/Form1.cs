@@ -33,8 +33,8 @@ namespace OnedriveUpload
 
         private static IAuthenticationProvider CreateAuthenticationProvider()
         {
-            var clientId = "21a60097-73b1-4bce-82a6-42664ad83ff9";
-            var authority = $"https://login.microsoftonline.com/consumers/{"c280b8e7-9f0a-498f-b9a5-1331eedcdcbf"}/v2.0";
+            var clientId = "";
+            var authority = $"https://login.microsoftonline.com/consumers/{""}/v2.0";
 
             List<string> scopes = new List<string>();
             scopes.Add("https://graph.microsoft.com/.default");
